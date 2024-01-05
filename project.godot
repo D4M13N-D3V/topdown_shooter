@@ -6,22 +6,18 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
-
-_global_script_classes=[  ]
-_global_script_class_icons={
-
-}
+config_version=5
 
 [application]
 
 config/name="YOUR_PROJECT_NAME_HERE"
+config/features=PackedStringArray("4.2")
 config/icon="res://icon.png"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "gut" )
+enabled=PackedStringArray("res://addons/gut/plugin.cfg")
 
 [rendering]
 
-environment/default_environment="res://default_env.tres"
+environment/defaults/default_environment="res://default_env.tres"
